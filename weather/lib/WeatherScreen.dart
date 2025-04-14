@@ -125,7 +125,7 @@ class _MyWeatherAppHomePageState extends State<MyWeatherAppHomePage> {
                           : ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                for (int i = 1; i <= 5; i++)
+                                for (int i = 1; i <= 30; i++)
                                   _buildHourlyCard(
                                     forecastData![i]["dt_txt"].split(" ")[1].substring(0, 5),
                                     _getWeatherIcon(forecastData![i]["weather"][0]["main"]),
